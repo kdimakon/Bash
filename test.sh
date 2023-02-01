@@ -1,0 +1,7 @@
+#!bin/bash
+date
+date
+dateecho "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+date
+date
+date

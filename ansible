@@ -1,0 +1,28 @@
+project_all:
+  vars:
+    ansible_ssh_user: root
+  children: 
+    work_hosts: 
+      hosts: 
+        work_01: 
+          ansible_host: 192.168.1.x
+    workshop_hosts:
+      hosts:
+        work_shop_01:
+          ansible_host: 192.168.1.x
+    k8s: 
+      hosts: 
+        k8s_01:
+          ansible_host: 192.168.1.x
+        
+
+
+
+
+ansible -m authorized_key -a "key=\"{{lookup('file','~/.ssh/id_rsa.pub')}}\" user=root" project_all --ask-pass                      #проброс ключей
+
+ansible all -m ping
+
+ansible all -m shell -a "cat /etc/os-release && date"
+
+ansible all -m shell -a "cat /etc/os-release | grep PRETTY_NAME && date"

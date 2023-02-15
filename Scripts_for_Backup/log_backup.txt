@@ -1,2 +1,2 @@
-2023-02-15: Server ubuntu2 (192.168.1.208):  Backup was done 
-2023-02-15: Server 192.168.1.210: Server isn't available 
+2023-02-15: Server ubuntu2 (x.x.x.x):  Backup was done 
+2023-02-15: Server x.x.x.x: Server isn't available 

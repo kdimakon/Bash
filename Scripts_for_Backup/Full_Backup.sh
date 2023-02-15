@@ -19,7 +19,7 @@ function backup_server ()
             
             echo "$CURR_DATE: Server $S_NAME ($ip):  Backup was done " >> /root/log_backup.txt
         else
-            mail -s "Server $ip isn't available" wchoy@mailto.plus
+            mail -s "Server $ip isn't available" xxx@mailto.plus
             echo "$CURR_DATE: Server $ip: Server isn't available " >> /root/log_backup.txt
         fi
     done </root/ip.txt

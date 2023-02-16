@@ -1,0 +1,3 @@
+sed -i -e '/^[ \t]*#/d' ansible.cfg         # remove #lines
+
+sed -i "/^$/d" ansible.cfg                  # remove empty lines
